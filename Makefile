@@ -9,10 +9,12 @@ BIN_DIR = bin/
 # List of all the source files.
 SRC_NAMES = \
 	app_input \
+	clerp \
 	main \
 	render \
 	SDL_initialize \
 	update \
+	utils \
 
 # List of all the source files, folders are to be added by
 # including a $(addprefix, DIR_NAME, $(DIR_FILES))
