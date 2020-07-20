@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:31:10 by home              #+#    #+#             */
-/*   Updated: 2020/07/20 03:56:59 by home             ###   ########.fr       */
+/*   Updated: 2020/07/20 04:00:03 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	main(void)
 	app_context_initialize(&app_state, &display);
 	// memset(app_state.gradient, 255, sizeof(*(app_state.gradient)) * BAR_WIDTH);
 
-	grad_lerp(app_state.gradient, 0xFF0000, 0x000000);
+	grad_lerp(app_state.gradient, 0xFF0000, 0x00FF00);
 
 	while (app_state.active == true)
 	{
