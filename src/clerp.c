@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/20 03:20:28 by home              #+#    #+#             */
-/*   Updated: 2020/07/20 03:56:08 by home             ###   ########.fr       */
+/*   Updated: 2020/07/20 04:22:53 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,10 @@ integer	lerp(integer min, integer max, int t, int tmax)
 
 int		clerp(int color1, int color2, int t, int tmax)
 {
-	int	r1;
-	int	g1;
-	int	b1;
+	int	r1, g1, b1;
+	int	r2, g2, b2;
 
-	int	r2;
-	int	g2;
-	int	b2;
-
-	int	r_res;
-	int	g_res;
-	int	b_res;
-
+	int	r_res, g_res, b_res;
 	int result;
 
 	ctoRGB(color1, &r1, &g1, &b1);
@@ -50,7 +42,6 @@ int		clerp(int color1, int color2, int t, int tmax)
 	g_res = lerp(g1, g2, t, tmax);
 	b_res = lerp(b1, b2, t, tmax);
 
-	result = 0;
 	result = (r_res << 16) |  (g_res <<  8) | (b_res <<  0);
 	return (result);
 }

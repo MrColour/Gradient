@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:38:32 by home              #+#    #+#             */
-/*   Updated: 2020/07/20 03:55:57 by home             ###   ########.fr       */
+/*   Updated: 2020/07/20 04:26:25 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include "structs.h"
 # include "window_config.h"
 
-# define BAR_WIDTH (300)
+# define BAR_WIDTH (500)
 # define BAR_HEIGHT (5)
 
 # define BAR_LOC_SX (100)
