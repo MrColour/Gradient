@@ -1,2 +1,2 @@
 # Gradient
-Generate C code for color gradients
+C code for color gradients
