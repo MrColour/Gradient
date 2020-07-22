@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:31:10 by home              #+#    #+#             */
-/*   Updated: 2020/07/21 18:52:35 by home             ###   ########.fr       */
+/*   Updated: 2020/07/22 01:02:23 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,17 +42,19 @@ int	main(void)
 	SDL_StartTextInput();
 	// SDL_SetTextInputRect
 
-	app_state.curve_count = 3;
+	app_state.curve_count = 4;
 
-	app_state.curves[0].s_color = 0xFF0000;
-	app_state.curves[1].s_color = 0x33FF00;
-	app_state.curves[2].s_color = 0x00FF00;
-	app_state.curves[3].s_color = 0x00FFFF;
+	app_state.curves[0].s_color = 0x33FF00;
+	app_state.curves[1].s_color = 0x00FF00;
+	app_state.curves[2].s_color = 0x00FFFF;
+	app_state.curves[3].s_color = 0x6633FF;
+	app_state.curves[3].s_color = 0x6633FF;
 
-	app_state.curves[0].start =  90;
-	app_state.curves[1].start = 0;
-	app_state.curves[2].start = 250;
-	app_state.curves[3].start = 300;
+	app_state.curves[0].start =  0;
+	app_state.curves[1].start = 10;
+	app_state.curves[2].start = 50;
+	app_state.curves[3].start = 100;
+	app_state.curves[4].start = 200;
 
 	while (app_state.active == true)
 	{
@@ -67,5 +69,6 @@ int	main(void)
 
 	}
 	SDLU_close(&display);
+	generate_c_file(app_state.curves, app_state.curve_count);
 	return (0);
 }

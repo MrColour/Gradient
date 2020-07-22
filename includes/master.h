@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:38:32 by home              #+#    #+#             */
-/*   Updated: 2020/07/21 17:12:27 by home             ###   ########.fr       */
+/*   Updated: 2020/07/21 20:01:13 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define MASTER_H
 
 # include <stdio.h>
+# include <fcntl.h>
 
 # include <SDL_image.h>
 
@@ -43,6 +44,8 @@ void		create_gradient(int *dest, int curve_amount, clerps *lerp_info);
 
 void		grad_gauss(int *colors, integer height, integer center, integer width);
 
+
+void		generate_c_file(clerps *curves, int curve_count);
 // void		itow(int n, SDL_Rect dest, t_display *dislay);
 
 #endif

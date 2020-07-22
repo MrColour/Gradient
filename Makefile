@@ -12,6 +12,7 @@ SRC_NAMES = \
 	clerp \
 	cgauss \
 	main \
+	output \
 	render \
 	SDL_initialize \
 	update \
