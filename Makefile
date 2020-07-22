@@ -10,6 +10,7 @@ BIN_DIR = bin/
 SRC_NAMES = \
 	app_input \
 	clerp \
+	cgauss \
 	main \
 	render \
 	SDL_initialize \

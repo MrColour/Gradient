@@ -6,13 +6,13 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 02:38:19 by home              #+#    #+#             */
-/*   Updated: 2020/07/20 03:15:35 by home             ###   ########.fr       */
+/*   Updated: 2020/07/21 00:54:03 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "master.h"
 
-void	draw_bar(int *colors, t_display *display)
+void	draw_bar(int *colors, t_display *display, int offset)
 {
 	int	col;
 	int	x;
@@ -24,7 +24,7 @@ void	draw_bar(int *colors, t_display *display)
 
 	col = 0;
 	x = BAR_LOC_SX;
-	y = BAR_LOC_SY;
+	y = BAR_LOC_SY + offset;
 	while (col < BAR_WIDTH)
 	{
 		ctoRGB(colors[col], &r, &g, &b);

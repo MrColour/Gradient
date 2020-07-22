@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 03:05:42 by home              #+#    #+#             */
-/*   Updated: 2020/07/20 02:40:16 by home             ###   ########.fr       */
+/*   Updated: 2020/07/21 16:57:58 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,12 @@ typedef struct	gaussian_restraints
 	integer	width;
 }				gaussian_restraints;
 
+typedef struct	clerps
+{
+	int		s_color;
+	int		start;
+}				clerps;
+
 typedef struct	s_app_context
 {
 	bool		active;
@@ -42,7 +48,7 @@ typedef struct	s_app_context
 	int			capacity;
 	int			at;
 
-	gaussian_restraints	*curves;
+	clerps		*curves;
 
 	int			*gradient;
 }				t_app_context;

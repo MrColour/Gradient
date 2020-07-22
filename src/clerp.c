@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/20 03:20:28 by home              #+#    #+#             */
-/*   Updated: 2020/07/20 04:22:53 by home             ###   ########.fr       */
+/*   Updated: 2020/07/21 16:44:25 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,14 +46,14 @@ int		clerp(int color1, int color2, int t, int tmax)
 	return (result);
 }
 
-void	grad_lerp(int *colors, int start, int end)
+void	grad_lerp(int *colors, int start, int end, int tmax, int offset)
 {
 	int	i;
 
 	i = 0;
-	while (i < BAR_WIDTH)
+	while (i < tmax)
 	{
-		colors[i] = clerp(start, end, i, BAR_WIDTH);
+		colors[i + offset] = clerp(start, end, i, tmax);
 		i++;
 	}
 }

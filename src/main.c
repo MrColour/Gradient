@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:31:10 by home              #+#    #+#             */
-/*   Updated: 2020/07/20 04:26:10 by home             ###   ########.fr       */
+/*   Updated: 2020/07/21 16:58:04 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ int	main(void)
 	app_context_initialize(&app_state, &display);
 	// memset(app_state.gradient, 255, sizeof(*(app_state.gradient)) * BAR_WIDTH);
 
-	grad_lerp(app_state.gradient, 0xFF0000, 0x0000FF);
 
 	while (app_state.active == true)
 	{
@@ -47,7 +46,16 @@ int	main(void)
 
 		update_app_state(&app_state);
 
-		draw_bar(app_state.gradient, &display);
+		grad_lerp(app_state.gradient, 0xFF0000, 0x33FF00, 100, 0);
+		grad_lerp(app_state.gradient, 0x33FF00, 0x00FF00, 100, 100);
+
+		grad_lerp(app_state.gradient, 0x00FF00, 0x00FFFF, 100, 200);
+		// grad_lerp(app_state.gradient, 0x000000, 0x00FF00, 100, 100);
+		draw_bar(app_state.gradient, &display, 0);
+
+
+		// grad_gauss(app_state.gradient, 255, 0, 170);
+		// draw_bar(app_state.gradient, &display, 50);
 
 		SDL_RenderPresent(display.renderer);
 		SDL_RenderClear(display.renderer);
