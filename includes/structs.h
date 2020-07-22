@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 03:05:42 by home              #+#    #+#             */
-/*   Updated: 2020/07/21 16:57:58 by home             ###   ########.fr       */
+/*   Updated: 2020/07/21 17:10:06 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ typedef struct	s_app_context
 	integer		max;
 
 	int			capacity;
-	int			at;
+	int			curve_count;
 
 	clerps		*curves;
 

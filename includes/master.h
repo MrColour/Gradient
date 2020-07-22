@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:38:32 by home              #+#    #+#             */
-/*   Updated: 2020/07/21 16:44:08 by home             ###   ########.fr       */
+/*   Updated: 2020/07/21 17:12:27 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ void		ctoRGB(int color, int *r, int *g, int *b);
 
 int			clerp(int color1, int color2, int t, int tmax);
 void		grad_lerp(int *colors, int start, int end, int tmax, int offset);
+
+void		create_gradient(int *dest, int curve_amount, clerps *lerp_info);
 
 void		grad_gauss(int *colors, integer height, integer center, integer width);
 
