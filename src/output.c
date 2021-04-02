@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/21 19:52:34 by home              #+#    #+#             */
-/*   Updated: 2020/07/22 01:02:54 by home             ###   ########.fr       */
+/*   Updated: 2021/01/09 18:00:37 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,5 @@ void	generate_c_file(clerps *curves, int curve_count)
 
 	dprintf(fd, "	ctoRGB(result, r, g, b);\n");
 	dprintf(fd, "}\n");
-
-	(void)curve_count;
-	(void)curves;
 }
 

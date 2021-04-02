@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:31:10 by home              #+#    #+#             */
-/*   Updated: 2020/07/22 01:02:23 by home             ###   ########.fr       */
+/*   Updated: 2021/01/09 17:59:52 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,13 @@ int	main(void)
 	app_state.curves[1].s_color = 0x00FF00;
 	app_state.curves[2].s_color = 0x00FFFF;
 	app_state.curves[3].s_color = 0x6633FF;
-	app_state.curves[3].s_color = 0x6633FF;
+	// app_state.curves[4].s_color = 0x6633FF;
 
-	app_state.curves[0].start =  0;
-	app_state.curves[1].start = 10;
-	app_state.curves[2].start = 50;
-	app_state.curves[3].start = 100;
-	app_state.curves[4].start = 200;
+	app_state.curves[0].start =   0 * 4;
+	app_state.curves[1].start =  10 * 4;
+	app_state.curves[2].start =  50 * 4;
+	app_state.curves[3].start = 100 * 4;
+	app_state.curves[4].start = 200 * 4;
 
 	while (app_state.active == true)
 	{

@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 03:05:42 by home              #+#    #+#             */
-/*   Updated: 2020/07/21 17:10:06 by home             ###   ########.fr       */
+/*   Updated: 2021/01/09 17:51:57 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ typedef struct	s_app_context
 	int			curve_count;
 
 	clerps		*curves;
+	// gaussian_restraints		*curves;
 
 	int			*gradient;
 }				t_app_context;

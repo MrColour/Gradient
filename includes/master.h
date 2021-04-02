@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:38:32 by home              #+#    #+#             */
-/*   Updated: 2020/07/21 20:01:13 by home             ###   ########.fr       */
+/*   Updated: 2021/04/01 23:52:35 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 # include "window_config.h"
 
 # define BAR_WIDTH (500)
-# define BAR_HEIGHT (5)
+# define BAR_HEIGHT (300)
 
-# define BAR_LOC_SX (100)
+# define BAR_LOC_SX (0)
 # define BAR_LOC_SY (100)
 
 void		SDLU_start(t_display *dest);
